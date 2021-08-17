@@ -36,8 +36,8 @@ const Login = () => {
                     .then(res => {
                         if (res.data.status === "success") {
                             sessionStorage.setItem('logged-user', JSON.stringify(res.data.authUser))
-                            window.location.href="/home"
-                            // history.push('/home')
+//                             window.location.href="/home"
+                             history.push('/home')
                         } else {
                             setErrorMessage('invalid credentials')
                         }
