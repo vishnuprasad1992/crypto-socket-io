@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
-const socket = io("http://localhost:5000/");
+const socket = io("https://crypto-socket-io.herokuapp.com/");
 socket.on('connection')
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
     const [mobile, setMobile] = useState("");
     const [message, setMessage] = useState("");
 
-    const dataUrl = 'http://localhost:5000/api/data'
+    const dataUrl = 'https://crypto-socket-io.herokuapp.com/api/data'
 
     useEffect(() => {
         if (!sessionStorage.getItem("logged-user")) {
