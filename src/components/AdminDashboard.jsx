@@ -5,7 +5,7 @@ import ReactNotification from 'react-notifications-component';
 import 'react-notifications-component/dist/theme.css';
 import { store } from 'react-notifications-component';
 
-const socket = io("http://localhost:5000/");
+const socket = io("https://crypto-socket-io.herokuapp.com/");
 socket.on('connection')
 
 
