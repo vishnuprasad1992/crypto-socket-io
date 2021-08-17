@@ -13,7 +13,7 @@ const Registeration = () => {
     const [message,setMessage] = useState("");
     const [errorMessage,setErrorMessage] = useState("");
 
-    const registerURL = 'http://localhost:5000/api/user/registeration';
+    const registerURL = 'https://crypto-socket-io.herokuapp.com/api/user/registeration';
 
     useEffect(() => {
         if (sessionStorage.getItem("logged-user")) {
